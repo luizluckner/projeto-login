@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --green: #49a09d;
+    --violet: #5f2c82;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--violet);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 500px;
+    background-color: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.362)
+}
+
+#image {
+    background: var(--violet) url(../img/metal.jpg) no-repeat center bottom;
+    background-size: cover;
+    height: 200px;
+    display: block;
+}
+
+#form {
+    display: block;
+    padding: 10px;
+}
