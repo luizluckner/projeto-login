@@ -4,6 +4,7 @@
     --black: #000;
     --white: #fff;
     --green: #49a09d;
+    --greener: #3c7977;
     --violet: #5f2c82;
 }
 
@@ -30,14 +31,14 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 250px;
-    height: 500px;
+    height: 520px;
     background-color: var(--white);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.362);
-
+    
+    transform: translate(-50%, -50%);
     transition: width .4s, height .4s;
     transition-timing-function: ease;
 }
@@ -61,4 +62,72 @@ section#login {
 
 #form p {
     font-size: 0.8em;
+}
+
+.campo {
+    background-color: var(--violet);
+    color: var(--white);
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 4px;
+}
+
+.campo > span {
+    font-size: 2em;
+}
+
+input {
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--greener);
+}
+
+form > a {
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+    color: var(--green);
+    border: 1px solid var(--green);
+}
+
+form > a:hover {
+    background-color: var(--greener);
+    color: var(--white);
+}
+
+.btn span {
+    font-size: 1.2em;
 }
