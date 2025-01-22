@@ -36,7 +36,10 @@ section#login {
     background-color: var(--white);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.362)
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.362);
+
+    transition: width .4s, height .4s;
+    transition-timing-function: ease;
 }
 
 #image {
