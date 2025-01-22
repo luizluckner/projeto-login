@@ -28,9 +28,13 @@
     #form {
         padding: 40px;
     }
+
+    #form p {
+        font-size: 1em;
+    }
 }
 
-@media screen and (min-width:993px) and (max-width:1200px) {
+@media screen and (min-width:993px) {
     body {
         background: linear-gradient(0deg, var(--green), var(--violet));
     }
@@ -49,5 +53,13 @@
 
     #form {
         padding: 40px;
+    }
+
+    #form h1 {
+        font-size: 2em;
+    }
+
+    #form p {
+        font-size: 1.2em;
     }
 }
