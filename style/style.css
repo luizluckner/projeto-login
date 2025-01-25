@@ -31,9 +31,6 @@ main {
 }
 
 section#login {
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
     width: 250px;
     height: 520px;
     background-color: var(--white);
@@ -41,7 +38,10 @@ section#login {
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.362);
     
-    /* transform: translate(-50%, -50%);
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: width .4s, height .4s;
     transition-timing-function: ease; */
 }
